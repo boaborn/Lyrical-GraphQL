@@ -22,7 +22,9 @@ class SongList extends Component {
       // Triditionally keyt use the id of model
       return (
         <li key={ id } className="collection-item">
-          { title }
+          <Link to={ `/songs/${id}` }>
+            { title }
+          </Link>
           <i className="material-icons"
             onClick={ () => this.onSongDelete(id) }
           >delete</i>
