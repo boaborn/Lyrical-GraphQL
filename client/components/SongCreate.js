@@ -20,6 +20,7 @@ class SongCreate extends Component {
         title: this.state.title
       },
       refetchQueries: [{ query }] // Auto run query to fetch data, eg, songs, also can put variables [{ query, variables:{} }]
+      // refetch fix new item not appear on list of songs
     }).then(() => hashHistory.push('/')) // Move user back to root route
   }
 
